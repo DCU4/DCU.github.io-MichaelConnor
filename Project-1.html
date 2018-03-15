@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="projects.css">
+	
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="main.js" type="text/javascript"></script>
+	
+
+	<title>Michael Connor</title>
+</head>
+
+<body>
+<div id="project-container" class="container">
+	<div class="grid">
+	
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="resume.html">Resume</a></li>					
+				<li class="dropdown"><button class="dropbtn">Projects</button>
+				<div class="dropdown-content">
+					<a href="project-1.html">Project 1</a>
+					<a href="project-2.html">Project 2</a>
+					<a href="project-3.html">Project 3</a>
+					<a href="project-4.html">Project 4</a>
+				</div>
+				</li>
+				<li><a href="blog.html">About</a></li>	
+				
+			</ul>
+		</nav>
+		
+		<header>
+			<h1>Neural Networks for Wind Power Forecasting</h1>
+			<h3>4th Year - Individual</h3>
+		</header>
+<main>
+
+		<div class="main-text">
+
+			<h2>Assignment: Predict the wind power generation for Ireland</h2>
+			<hr>
+				
+				<h5>Using pre-supplied training data from Eirgrid, I was assigned to predict the wind power generation across the entire island of Ireland. I used MATLAB to implement different versions of neural networks and tested their performance (Mean Squared Error, training time, complexity). The first revision used a single neuron ADLINE system, which showed poor generalization. </h5>
+				
+				<h5>Following on, a multi-neuron MLP network was devised using the Neural Net Toolbox. I ran through various training parameters, including Bayesian regularization and adaptive step size to minimise the output error.</h5>
+				<h5>The results were compared to Eirgrid’s forecast graph and my own system was more accurate across a wide range of data samples.</h5>
+
+		
+			<h5>Grade: A</h5>
+
+	</div>
+	<div class="main-img">
+		<h2>Pictures</h2>
+			<!--<img src="#" class="picture1-project1">
+			<img src="#" class="picture2-project1">
+			<img src="#" class="picture3-project1">-->
+
+		
+	</div>
+</main>
+
+	</div>
+	<!--End of Grid-->
+
+
+</div>
+<!--End of Container-->
+
+</body>
+
+</html>

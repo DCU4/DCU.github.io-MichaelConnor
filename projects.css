@@ -1,0 +1,83 @@
+/*CSS for the Resume Page*/
+
+body {
+	/*background-color: #004000*/
+	background-image: url(Motherboard.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 110%;
+	background-position: center;
+	color:var(--main-color);
+}
+
+.container {
+	background-color: rgba(60,115,60,0.9); /*#3c733c*/
+	width: 100%;
+	height: 100%;
+}
+
+#project-container {
+	display: none;
+}
+
+
+/*Grid*/
+
+.grid {
+	display: grid;
+	width:100%;
+	height: 100%;
+	margin:0;
+	grid-template-columns: 4fr;
+	grid-template-rows: 1fr 2fr 8fr;
+	grid-template-areas: 
+		"nav"
+		"header"	
+		"main";
+}
+
+
+/*Header*/
+
+header {
+	grid-area: header;
+	margin-top: 0 10px;
+	text-align: center;
+
+}
+
+header h1 {
+	margin: 0;
+}
+
+
+/*Main*/
+
+main {
+	grid-area: main;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 2fr 2fr;
+	grid-template-areas: 
+		"steps image";
+}
+
+.main-text {
+	grid-area: steps;
+	background-color: var(--tertiary-color);
+	width:auto;
+	padding: 10px 20px ;
+}
+
+.main-text h5 {
+	text-align: justify;
+
+}
+
+
+.main-img {
+	grid-area: image;
+	background-color: var(--secondary-color);
+	width: auto;
+	text-align: center;
+}
